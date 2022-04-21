@@ -1,6 +1,7 @@
 # Server Clock
 
-**Server Clock** is a PowerShell script designed to display the system clock of a chosen web server (Default: https://time.is).  
+**Server Clock** is a PowerShell script designed to display the system clock of a chosen web server  
+(Default: https://time.is).   
 
 ## Disclaimer
 
@@ -17,7 +18,7 @@ While **Server Clock** aims to be accurate, no warranty is given. Use at your ow
 
 ## Attempts to Improve Accuracy
 ### Sync
-<img src="./assets/timeline.png" width="900" alt="Creating a shortcut file"/>
+<img src="./assets/timeline.PNG" width="900" alt="Creating a shortcut file"/>
 
 Since `date` format looks like `Sat, 1 Jan 2000 12:00:00 GMT`, time units below 1 second are omitted. *Although not garunteed*, it will be assumed that the omitted time units are truncated, not rounded. The trailing 0.999s will mean 0s instead of 1s in this case. As shown in the above image, the `date` generation time is always between the values of `date` and `date`+1s (red bars).  
   
@@ -40,7 +41,7 @@ and so on.
 
 ### Clock Pooling
 
-<img src="./assets/clock_pooling.png" width="900" alt="Creating a shortcut file"/>
+<img src="./assets/clock_pooling.PNG" width="900" alt="Creating a shortcut file"/>
 
 The second version of **Server Clock** follows the same idea with a different approach called Clock Pooling. Aiming to take care of the outliers, the process generates a pool of clocks and selects a clock with the largest estimation within one-second timeframe with the most number of clocks.  
 
