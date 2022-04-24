@@ -95,7 +95,7 @@ While ($i -lt $clock_pool.Count -and !$candidate_done) {
         if ($clock_pool[$i].Delta.Ticks - $clock_pool[$j].Delta.Ticks -lt 10000000) {
             if ($j -eq $clock_pool.Count-1) {$candidate_done = $true}
             $cc = $j-$i
-            $candidate.Add(($cc,$i))| Out-Null
+            $candidate.Add([System.Tuple]::Create($cc,$i))| Out-Null
             break
         }
     }
@@ -103,7 +103,7 @@ While ($i -lt $clock_pool.Count -and !$candidate_done) {
 }
 
 $candidate = $candidate |Sort -Descending
-$the_clock = $clock_pool[$candidate[0][1]]
+$the_clock = $clock_pool[$candidate[0].Item2]
 
 
 Write-Host('Synced to', $the_clock.server_clock)
