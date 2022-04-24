@@ -53,4 +53,5 @@ The second version of **Server Clock** follows the same idea with a different ap
 - [HTTP request methods: HEAD](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD) - Request only for header 
 - [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://httpwg.org/specs/rfc7231.html#header.date) - `date` header in HTTP response
 - [Time.is : exact time for any time zone](https://time.is/) - Tested against this webserver
-
+- [Converting Timezones in PowerShell](https://stackoverflow.com/a/58803285) - `TimeZoneInfo` class to convert timezones (default:local time)
+- [TimeZoneInfo Class](https://docs.microsoft.com/en-us/dotnet/api/system.timezoneinfo) - More on `TimeZoneInfo` class
