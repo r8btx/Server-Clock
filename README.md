@@ -1,6 +1,6 @@
 # Server Clock
 
-**Server Clock** is a PowerShell script designed to display the system clock of a chosen web server  
+**Server Clock** is a PowerShell script designed to display the system clock of the target web server  
 (Default: https://time.is).   
 
 ## Disclaimer
