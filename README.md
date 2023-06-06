@@ -3,6 +3,11 @@
 **Server Clock** is a PowerShell script designed to display the system clock of the target web server  
 (Default: https://time.is).   
 
+## !UPDATE!
+
+New version is available!  
+More advanced, cross-platform (JavaScript) implementation can be found [here](https://github.com/r8btx/Server-Clock-Bookmarklet).
+
 ## Disclaimer
 
 While **Server Clock** aims to be accurate, no warranty is given. Use at your own risk!
